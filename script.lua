@@ -73429,7 +73429,7 @@ gamesse:AddButton({
 })
 
 gamesse:AddButton({
-	Title = "FE Crash/Lag Natural Disaster",
+	Title = "FE Crash/Lag Sount Bronx",
 	Description = ":)",
 	Callback = function()
 		if game.PlaceId ~= 189707 then
@@ -73437,51 +73437,51 @@ gamesse:AddButton({
         else
             game:GetService("RunService").RenderStepped:Connect(function()
                 local args = {
-                    [1] = "Structure",
-                    [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                    [1] = "None",
+                    [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("None")
                 }
-                game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
-                game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BD"):FireServer(unpack(args))
+                game:GetService("Players").LocalPlayer.Character:FindFirstChild("None"):Destroy()
                 task.spawn(function()
                     game:GetService("RunService").RenderStepped:Connect(function()
                         local args = {
-                            [1] = "Structure",
-                            [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                            [1] = "None",
+                            [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("None")
                         }
-                        game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
-                        game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                        game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BD"):FireServer(unpack(args))
+                        game:GetService("Players").LocalPlayer.Character:FindFirstChild("None"):Destroy()
                         task.spawn(function()
                             game:GetService("RunService").RenderStepped:Connect(function()
                                 local args = {
-                                    [1] = "Structure",
-                                    [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                    [1] = "None",
+                                    [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("None")
                                 }
-                                game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
-                                game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BD"):FireServer(unpack(args))
+                                game:GetService("Players").LocalPlayer.Character:FindFirstChild("None"):Destroy()
                                 task.spawn(function()
                                     game:GetService("RunService").RenderStepped:Connect(function()
                                         local args = {
-                                            [1] = "Structure",
-                                            [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                            [1] = "None",
+                                            [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("None")
                                         }
-                                        game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
-                                        game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                        game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BD"):FireServer(unpack(args))
+                                        game:GetService("Players").LocalPlayer.Character:FindFirstChild("None"):Destroy()
                                         task.spawn(function()
                                             game:GetService("RunService").RenderStepped:Connect(function()
                                                 local args = {
-                                                    [1] = "Structure",
-                                                    [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                                    [1] = "None",
+                                                    [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("None")
                                                 }
-                                                game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
-                                                game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                                game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BD"):FireServer(unpack(args))
+                                                game:GetService("Players").LocalPlayer.Character:FindFirstChild("None"):Destroy()
                                                 task.spawn(function()
                                                     game:GetService("RunService").RenderStepped:Connect(function()
                                                         local args = {
-                                                            [1] = "Structure",
-                                                            [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                                            [1] = "None",
+                                                            [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("None")
                                                         }
-                                                        game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
-                                                        game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                                        game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BD"):FireServer(unpack(args))
+                                                        game:GetService("Players").LocalPlayer.Character:FindFirstChild("None"):Destroy()
                                                     end)
                                                 end)
                                             end)
