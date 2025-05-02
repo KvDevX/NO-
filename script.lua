@@ -73427,6 +73427,75 @@ gamesse:AddButton({
         end
 	end
 })
+
+gamesse:AddButton({
+	Title = "FE Crash/Lag Natural Disaster",
+	Description = ":)",
+	Callback = function()
+		if game.PlaceId ~= 189707 then
+            game:GetService("TeleportService"):Teleport(189707,game:GetService("Players").LocalPlayer)
+        else
+            game:GetService("RunService").RenderStepped:Connect(function()
+                local args = {
+                    [1] = "Structure",
+                    [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                }
+                game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
+                game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                task.spawn(function()
+                    game:GetService("RunService").RenderStepped:Connect(function()
+                        local args = {
+                            [1] = "Structure",
+                            [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                        }
+                        game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
+                        game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                        task.spawn(function()
+                            game:GetService("RunService").RenderStepped:Connect(function()
+                                local args = {
+                                    [1] = "Structure",
+                                    [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                }
+                                game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
+                                game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                task.spawn(function()
+                                    game:GetService("RunService").RenderStepped:Connect(function()
+                                        local args = {
+                                            [1] = "Structure",
+                                            [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                        }
+                                        game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
+                                        game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                        task.spawn(function()
+                                            game:GetService("RunService").RenderStepped:Connect(function()
+                                                local args = {
+                                                    [1] = "Structure",
+                                                    [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                                }
+                                                game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
+                                                game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                                task.spawn(function()
+                                                    game:GetService("RunService").RenderStepped:Connect(function()
+                                                        local args = {
+                                                            [1] = "Structure",
+                                                            [2] = game:GetService("Workspace"):WaitForChild("Structure")
+                                                        }
+                                                        game:GetService("ReplicatedStorage"):WaitForChild("Event"):FireServer(unpack(args))
+                                                        game:GetService("Workspace"):FindFirstChild("Structure"):Destroy()
+                                                    end)
+                                                end)
+                                            end)
+                                        end)
+                                    end)
+                                end)
+                            end)
+                        end)
+                    end)
+                end)
+            end)
+        end
+	end
+})
 local Chatwithhackers = Window:AddTab({
 	Title = "Chat with other exploiters",
 	Icon = "globe"
